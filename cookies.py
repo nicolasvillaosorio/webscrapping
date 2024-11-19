@@ -10,7 +10,10 @@ driver = webdriver.Edge(service=service)
 
 driver.get("https://www.mercadolibre.com.co")
 
-time.sleep(2)  
+time.sleep(2) #ejecutar en modo debug, con un breakpoint aquí
+#la idea es iniciar sesion cuando llegue  a este punto
+#para así avanzar en el debug y extrear las cookies
+
 
 cookies = driver.get_cookies()
 
